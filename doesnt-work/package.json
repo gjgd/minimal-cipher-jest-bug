@@ -1,0 +1,17 @@
+{
+  "name": "minimal-cipher-jest-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minimal-cipher": "^1.4.0"
+  },
+  "devDependencies": {
+    "jest": "^25.0.0"
+  }
+}
