@@ -1,0 +1,28 @@
+name: CI
+
+on: [push]
+
+jobs:
+  works:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: ${{ 14.x }}
+    - run: npm install
+      working-directory: works
+    - run: npm t
+      working-directory: works
+
+  doesnt-work:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: ${{ 14.x }}
+    - run: npm install
+      working-directory: doesnt-work
+    - run: npm t
+      working-directory: doesnt-work
