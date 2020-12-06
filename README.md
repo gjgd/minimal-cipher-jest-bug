@@ -13,7 +13,7 @@ The test passes
 ## `minimal-cipher@1.4.0` doesnt work with jest 25 (and up)
 
 ```
-cd works
+cd doesnt-work
 npm i
 npm t
 ```
